@@ -1,0 +1,110 @@
+/*body*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(238, 18, 18, 0.7)),url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+/*form*/
+.formstyle{
+    margin-top: 10%;
+    margin-left: 35%;
+}
+/*button*/
+input[type=button]{
+    width: 90px;
+    padding: 15px;
+    margin: 2px;
+    margin-left: 5px;
+    border: 1px solid rgb(224, 168, 168); 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+}
+input[type=text], select, textarea {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid rgb(224, 168, 168); 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    
+}
+input[type=button]:hover{
+    background-color: black;
+    color: white;
+}
+/*link*/
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: aqua;
+    transform: scale(1.5);
+}
+/*footer*/
+.copyright{
+    text-align: center;
+    margin: 30px;
+    color: aqua;
+    font-size: 18px;
+
+}
+
+
+
+
+
+/*sp*/
+.topCenter{
+    position:fixed;
+    top:80%;
+    text-align:center;
+    width:100%;
+  }
+  .letters span{
+  color:#fff;
+  display:inline-block;
+  letter-spacing:.3em;
+  transition:.2s;
+}
+
+.letters span.focus{
+  color:red;
+  transform:scale(1.5);
+}
+
+.letters span.focus + span, .letters.minusOne > span:first-child{
+  color:cyan;
+  transform:scale(2) translateY(-0.3em);
+}
+
+.letters span.focus + span + span, .letters.minusTwo > span:first-child,.letters.minusOne > span:nth-child(2){
+  color:yellow;
+  transform:scale(1.5);
+}
+  
+  
+  /*glow in night*/
+  .letters span{
+    color:#333;
+    display:inline-block;
+    letter-spacing:.3em;
+    transition:.8s;
+  }
+  
+  .letters span.focus, .letters span.focus + span + span, .letters.minusTwo > span:first-child,.letters.minusOne > span:nth-child(2){
+    color:yellow;
+    text-shadow:0 0 16px yellow;
+  }
+  
+  .letters span.focus + span, .letters.minusOne > span:first-child{
+    color:darkOrange;
+    text-shadow:0 0 16px darkOrange;
+  }
+  
